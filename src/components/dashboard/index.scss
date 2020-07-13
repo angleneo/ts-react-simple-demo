@@ -1,0 +1,70 @@
+@import "../../index";
+$gs: Gill Sans;
+.dashboard-components {
+  z-index: 2;
+  position: absolute;
+  top: 100px;
+  left: 320px;
+  padding:50px;
+  box-sizing: border-box;
+  width: 80%;
+  min-width: 600px;
+  box-shadow: 4px 4px 20px rgba(0, 0, 0, 0.25);
+  border-radius: 10px;
+  background: #fff;
+  .total-info {
+    margin:0 auto;
+    padding:0 20px 44px;
+    box-sizing: border-box;
+    width: 90%;
+    display:flex;
+    justify-content: space-between;
+    font-family: $gs;
+    .item {
+      width: 100%;
+      text-align: center;
+      font-size: 18px;
+      p, h2 {
+        margin:10px 0;
+        font-size: 36px;
+        font-weight: 600;
+      }
+      p {
+        margin:0;
+      }
+    }
+    .item-increase {
+      margin-top: 20px;
+    }
+    .red {
+      color:red;
+    }
+    .blue {
+      color: #015e90;
+    }
+    .yellow {
+      color: #e78717;
+    }
+  }
+  .router-data {
+    width: 100%;
+    border-top: 1px solid #000;
+  }
+}
+@media screen and (max-width: 1600px) {
+  .dashboard-components {
+    width: 75%;
+  }
+}
+
+@media screen and (max-width: 1400px) {
+  .dashboard-components {
+    width: 70%;
+  }
+}
+
+@media screen and (max-width: 1100px) {
+  .dashboard-components {
+    width: 65%;
+  }
+}

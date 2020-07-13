@@ -1,0 +1,95 @@
+@import '../../index';
+
+$w: 100%;
+$f: #ffffff;
+$gs: Gill Sans;
+$borbox: border-box;
+
+.space-b {
+  display: flex;
+  justify-content: space-between;
+}
+.text-c {
+  text-align: center;
+}
+.header {
+  z-index: 1;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: $w;
+  height: 460px;
+  background: linear-gradient(116.69deg, #000000 -86.16%, #00a2ff 56.2%);
+  .top {
+    width: $w;
+    height: 90px;
+    color: $f;
+    padding: 25px 30px;
+    box-sizing: $borbox;
+    @extend .space-b;
+
+    .dashboard {
+      font-family: $gs;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 24px;
+      line-height: 36px;
+      .icon {
+        margin-top: -2px;
+        margin-right: 5px;
+        vertical-align: middle;
+      }
+    }
+    .logo {
+      width: 120px;
+      height: 61px;
+      img {
+        width: $w;
+      }
+    }
+  }
+  .admin {
+    padding: 0 10px;
+    box-sizing: $borbox;
+    width: 320px;
+    .admin-info {
+      width: $w;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      color: $f;
+      @extend .text-c;
+      .avatar {
+        width: 160px;
+        height: 160px;
+        border-radius: $w;
+        background: $f;
+      }
+      .name {
+        margin: 7px 0;
+        width: $w;
+        font-size: 24px;
+      }
+      .date,
+      .time {
+        margin: 2px 0;
+        width: $w;
+        font-size: 18px;
+      }
+      .log-out {
+        margin-top: 20px;
+        width: 100px;
+        height: 40px;
+        line-height: 40px;
+        color: #016dab;
+        font-weight:600;
+        background: $f;
+        border: 2px solid $f;
+        box-sizing: $borbox;
+        border-radius: 2px;
+        user-select: none;
+        @extend .click_active;
+      }
+    }
+  }
+}
